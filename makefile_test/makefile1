@@ -1,0 +1,10 @@
+main : main.o aa.o
+	g++ -o main main.o aa.o
+main.o : main.cpp aa.hpp
+	g++ -c main.cpp
+aa.0 : aa.cpp aa.hpp
+	g++ -c aa.cpp
+clean :
+	rm main main.o aa.o
+
+
